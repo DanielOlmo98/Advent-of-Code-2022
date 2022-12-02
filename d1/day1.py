@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-import os
-
 elfs = []
 
 with open("input.txt") as file:
@@ -12,4 +10,6 @@ with open("input.txt") as file:
             continue
         elf_inv_temp += int(line)
 
-print(f"Max: {max(elfs)} \nLen: {len(elfs)}")
+elfs.sort()
+print(f"Top 5: {elfs[-5:]} \nLen: {len(elfs)}")
+print(f"Top 3 combined: {sum(elfs[-3:])}")
