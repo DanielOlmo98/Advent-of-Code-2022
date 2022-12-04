@@ -5,6 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
+CMake*
 
 # Distribution / packaging
 .Python
@@ -127,3 +128,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/d1/cmake_install.cmake
+/d1/Makefile
+/d1/day1_c
