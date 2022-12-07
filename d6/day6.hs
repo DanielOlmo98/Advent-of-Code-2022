@@ -16,7 +16,7 @@ getPacketStart n path = do
 
 main :: IO ()
 main = do
-  answer <- getPacketStart 4 "input.txt"
+  answer <- getPacketStart 4 "bigboy.txt"
   print answer
-  answer <- getPacketStart 14 "input.txt"
+  answer <- getPacketStart 14 "bigboy.txt"
   print answer
