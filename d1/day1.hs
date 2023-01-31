@@ -1,14 +1,9 @@
--- |
-import           Data.Function                  ( on )
-import           Data.List                      ( groupBy )
+import Data.Function (on)
+import Data.List (groupBy)
 
 quickSort [] = []
 quickSort (list_1st : list_tail) =
   quickSort left_side ++ [list_1st] ++ quickSort right_side
- where
-  left_side  = [ a | a <- list_tail, a <= list_1st ]
-  right_side = [ b | b <- list_tail, b > list_1st ]
-quickSort (list_1st : list_tail) = quickSort left_side ++ [list_1st] ++ quickSort right_side
   where
     left_side = [a | a <- list_tail, a <= list_1st]
     right_side = [b | b <- list_tail, b > list_1st]
